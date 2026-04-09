@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+    --brawl-blue: #2a7fef;
+    --brawl-yellow: #fde015;
+    --brawl-dark: #1a237e;
+    --brawl-orange: #ff8f00;
+    --brawl-white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lilita One', cursive;
+    background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+    color: var(--brawl-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    border: 4px solid #000;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--brawl-yellow);
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #000;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: var(--brawl-orange);
+    color: white;
+    border: 3px solid #000;
+    border-radius: 10px;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #bf6c00;
+    transition: transform 0.1s;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #bf6c00;
+}
+
+.stats-card {
+    margin-top: 30px;
+    background: var(--brawl-blue);
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    text-align: left;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.stats-card h2 {
+    margin: 0 0 15px 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 #000;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 5px;
+}
+
+.stats-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.2);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.label { color: var(--brawl-yellow); }

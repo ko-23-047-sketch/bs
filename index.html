@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Brawl Stats Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Brawl Stars Stats</h1>
+        <div class="search-box">
+            <input type="text" id="playerTag" placeholder="Введите тег (напр. #9PP9GLR)">
+            <button onclick="getStats()">Найти</button>
+        </div>
+        <div id="result" class="stats-card" style="display:none;">
+            <h2 id="name"></h2>
+            <p>🏆 Кубки: <span id="trophies"></span></p>
+            <p>⭐ Уровень: <span id="expLevel"></span></p>
+            <p>🤖 Бойцов: <span id="brawlersCount"></span></p>
+            <p>⏳ Примерно часов: <span id="hours"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

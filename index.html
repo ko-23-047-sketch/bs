@@ -12,12 +12,23 @@
             <input type="text" id="playerTag" placeholder="Введите тег (напр. #9PP9GLR)">
             <button onclick="getStats()">Найти</button>
         </div>
-        <div id="result" class="stats-card" style="display:none;">
-            <h2 id="name"></h2>
-            <p>🏆 Кубки: <span id="trophies"></span></p>
-            <p>⭐ Уровень: <span id="expLevel"></span></p>
-            <p>🤖 Бойцов: <span id="brawlersCount"></span></p>
-            <p>⏳ Примерно часов: <span id="hours"></span></p>
+   <div id="result" class="stats-card" style="display:none;">
+        <h2 id="name">Игрок</h2>
+        <div class="stats-item">
+            <span class="label">🏆 КУБКИ:</span>
+            <span id="trophies">0</span>
+        </div>
+        <div class="stats-item">
+            <span class="label">⭐ УРОВЕНЬ:</span>
+            <span id="expLevel">0</span>
+        </div>
+        <div class="stats-item">
+            <span class="label">🤖 БОЙЦЫ:</span>
+            <span id="brawlersCount">0</span>
+        </div>
+        <div class="stats-item">
+            <span class="label">⏳ В ИГРЕ:</span>
+            <span id="hours">0</span> ч.
         </div>
     </div>
     <script src="script.js"></script>
